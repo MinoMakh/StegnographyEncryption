@@ -82,3 +82,9 @@ This will start the frontend on `http://localhost:3000`.
 ---
 
 With these steps, users should be able to set up and run the application locally and understand how to use it effectively.
+
+## Screenshots
+
+![Encryption](https://github.com/user-attachments/assets/2d9d570f-26a2-4f87-b6c6-e2cabe1dfb1a)
+
+![Decryption](https://github.com/user-attachments/assets/01e7eee8-5feb-4ee0-a92c-0f03085ea7e1)
