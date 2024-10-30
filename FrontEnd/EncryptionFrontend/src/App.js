@@ -48,6 +48,7 @@ const AppContent = () => {
         }
 
         setEncryptionKey(data.encryptionKey);
+        alert("Message correctly encrypted into the image!");
       } else {
         console.error("Encryption failed:", response.statusText);
       }
@@ -70,6 +71,7 @@ const AppContent = () => {
       if (response.ok) {
         const secretMessage = await response.text();
         setDecryptedMessage(secretMessage);
+        alert("Message correctly decrypted!");
       } else {
         console.error("Decryption failed:", response.statusText);
       }
@@ -107,8 +109,10 @@ const AppContent = () => {
                   encryptedImage={encryptedImage}
                   encryptionKey={encryptionKey}
                   imageName={imageName}
-                  onCopyKey={() => navigator.clipboard.writeText(encryptionKey)
-                  }
+                  onCopyKey={() => {
+                    navigator.clipboard.writeText(encryptionKey);
+                    alert("Key copied to clipboard!");
+                  }}
                 />
               )}
             </>
