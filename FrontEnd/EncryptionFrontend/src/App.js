@@ -48,7 +48,7 @@ const AppContent = () => {
         }
 
         setEncryptionKey(data.encryptionKey);
-        alert("Message correctly encrypted into the image!");
+        alert("Message encrypted into the image!");
       } else {
         console.error("Encryption failed:", response.statusText);
       }
@@ -71,7 +71,7 @@ const AppContent = () => {
       if (response.ok) {
         const secretMessage = await response.text();
         setDecryptedMessage(secretMessage);
-        alert("Message correctly decrypted!");
+        alert("Message decrypted!");
       } else {
         console.error("Decryption failed:", response.statusText);
       }
