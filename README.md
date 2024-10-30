@@ -48,7 +48,7 @@ This will start the backend server on `http://localhost:8080`.
 
 #### Frontend (React):
 
-1. **Navigate to Frontend folder:
+1. **Navigate to Frontend folder**:
 
 ```bash
 cd FrontEnd
