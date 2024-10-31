@@ -11,6 +11,8 @@ import EncryptImage from "./Components/EncryptImage";
 import EncryptedImageOutput from "./Components/EncryptedImageOutput";
 import DecryptImage from "./Components/DecryptImage";
 import DecryptedImageOutput from "./Components/DecryptedImageOutput";
+import About from "./Components/About";
+
 
 const AppContent = () => {
   const [message, setMessage] = useState("");
@@ -137,6 +139,15 @@ const AppContent = () => {
             </>
           }
         />
+
+        <Route
+          path="/about"
+          element={
+            <>
+              <About/>
+            </>
+          }
+        ></Route>
       </Routes>
     </div>
   );
