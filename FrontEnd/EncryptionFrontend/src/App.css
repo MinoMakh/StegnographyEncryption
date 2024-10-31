@@ -189,12 +189,14 @@ body,
 
 .button-group {
   display: flex;
-  gap: 10px; /* Add space between buttons */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 10px;
+  margin-top: 20px; /* Optional: Adds space between the paragraph and buttons */
 }
 
 .description {
   line-height: 1.6;
-  color: #555;
+  color: #959595;
   padding: 10px 0;
   text-align: justify;
   /* padding-left: 15px; */
